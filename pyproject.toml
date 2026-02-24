@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "netpulse"
+version = "1.0.0"
+description = "Modern Network Diagnostic Visualizer — real-time ping monitoring & traceroute with beautiful ASCII/ANSI terminal graphics. Zero dependencies."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "prismahacker77" },
+]
+keywords = [
+    "ping",
+    "traceroute",
+    "network",
+    "monitoring",
+    "tui",
+    "terminal",
+    "ascii",
+    "ansi",
+    "cli",
+    "diagnostic",
+    "808",
+    "vibe",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet",
+    "Topic :: System :: Networking :: Monitoring",
+    "Topic :: Utilities",
+]
+
+# ZERO external dependencies — pure Python stdlib
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/prismahacker77/netpulse"
+Repository = "https://github.com/prismahacker77/netpulse"
+Issues = "https://github.com/prismahacker77/netpulse/issues"
+
+[project.scripts]
+netpulse = "netpulse:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+.venv/
+venv/
+env/
+.env
+*.log
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+# Temp audio files from --vibe mode
+netpulse_vibe_*.wav
